@@ -1,0 +1,42 @@
+{
+  "name": "auction-app-api",
+  "version": "1.0.0",
+  "description": "API for auctionapp",
+  "main": "server.js",
+  "type": "module",
+  "engines": {
+    "node": ">=16.15.0",
+    "npm": ">=8.5.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "devstart" : "env-cmd -f ./configs/dev.env nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hackerspace-Community/auction-app-api.git"
+  },
+  "author": "HarshitRV Hritvik-Mohan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hackerspace-Community/auction-app-api/issues"
+  },
+  "homepage": "https://github.com/Hackerspace-Community/auction-app-api#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cloudinary": "^1.30.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.6",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "multer-storage-cloudinary": "^4.0.0",
+    "nodemailer": "^6.7.7",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  }
+}
